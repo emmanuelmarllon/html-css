@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      @font-face {
+        font-family: "Titulo Principal";
+        src: url("fontes/Celina Diary - Personal Use.otf") format("opentype");
+      }
+      @font-face {
+        font-family: "Titulo Noticia";
+        src: url("fontes/Metro Barat.otf") format("opentype");
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(37, 37, 37);
+        margin: 0px;
+      }
+      #Titulo-principal {
+        font-family: "Titulo Principal";
+        font-size: 3em;
+        font-weight: normal;
+        color: white;
+      }
+      #titulo-noticias {
+        font-family: "Titulo Noticia";
+        font-size: 2em;
+        font-weight: normal;
+      }
+      header {
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+      }
+      nav {
+        background-color: rgb(190, 114, 0);
+        padding: 3px;
+        box-shadow: 2px 2px 4px 1px rgba(255, 255, 0, 0.411);
+        text-align: center;
+      }
+      nav > a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        margin-right: 30px;
+      }
+      nav > a:hover {
+        text-decoration: underline;
+      }
+      main {
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 8px 10px 0px 0px #414040;
+        margin-bottom: 35px;
+      }
+      article {
+        background-color: lightgray;
+        padding: 5px;
+      }
+      article > aside {
+        background-color: rgb(165, 165, 165);
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 0px;
+      }
+      footer > p {
+        margin: 0px;
+      }
+      div#bola {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="Titulo-principal">Meu Site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">
+        <p>Esporte Política Tecnologia</p>
+      </section>
+      <section id="noticias">
+        <article>
+          <h2 id="titulo-noticias">Noticia sobre o Brasil</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+            dignissimos impedit. Repellat odio laboriosam ratione cupiditate
+            necessitatibus praesentium quod non ea animi,<br />
+            vero quis ipsum nam est architecto soluta sequi. Lorem ipsum dolor,
+            sit amet consectetur adipisicing elit. Facere fuga veniam possimus,
+            doloremque tempore minima quis maxime <br />
+            obcaecati dicta voluptatibus reiciendis nam neque harum? Temporibus
+            velit cupiditate repudiandae aliquid repellat. Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. <br />Vero magni sint enim
+            veniam dignissimos eos iusto eius debitis esse vitae, voluptatum
+            temporibus, quasi cupiditate? Maxime recusandae sequi modi <br />
+            consequatur iure! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Aspernatur recusandae molestias possimus delectus, ut eos
+            enim, praesentium culpa aliquid maiores eius! Quo <br />
+            tenetur laboriosam cum quis delectus dignissimos ad ratione!
+          </p>
+          <aside>artigo escrito por Marlon</aside>
+        </article>
+        <article>
+          <aside></aside>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>desenvolvido por Marlon</p>
+    </footer>
+    <div id="bola"></div>
+  </body>
+</html>

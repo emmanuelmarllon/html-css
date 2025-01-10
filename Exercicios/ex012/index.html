@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VÍdeos com HTML5</title>
+  </head>
+  <body>
+    <h1>Inserindo vídeos hospedados localmennte</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video controls width="560">
+      <source src="midia/meu-video720p.mp4.mp4" type="video/mp4" />
+      <source src="midia/meu-video1080p.mp4.mp4" type="video/mp4" />
+      <source src="midia/meu-video720p.webm.webm" type="video/webm" />
+      <source src="midia/meu-video1080p.ogv.ogv" type="video/ogg" />
+      <p>Seu navegador nao tem compatibilidade para reprodução de video</p>
+    </video>
+    <h1>Inserindo videos hospedado no youtube</h1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/3hng-hmSv2Y?si=UmM_udUFQguVMVcH"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <h1>Inserindo videos hospedado no Vimeo</h1>
+    <div style="padding: 50% 0 0 0; position: relative">
+      <iframe
+        iframe
+        src="https://player.vimeo.com/video/32275653?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+        style="position: absolute; top: 0; left: 0; width: 560px; height: 100%"
+        title="Depoimento Gustavo Guanabara"
+      ></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+  </body>
+</html>
