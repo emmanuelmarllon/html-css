@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Exemplo de Formulário</h1>
+    <p>Teste de Formulário</p>
+    <p>Formulário com radio e checkbox</p>
+
+    <!-- Início do formulário -->
+    <form action="cadastro.php" method="get" autocomplete="on">
+      <!-- Campo de seleção de sexo -->
+      <fieldset>
+        <legend>Sexo</legend>
+        <label for="imasc">
+          <input type="radio" name="sexo" id="imasc" value="M" /> Masculino
+        </label>
+        <br />
+        <label for="ifem">
+          <input type="radio" name="sexo" id="ifem" value="F" /> Feminino
+        </label>
+      </fieldset>
+
+      <!-- Campo de seleção de esportes favoritos -->
+      <fieldset>
+        <legend>Esportes favoritos</legend>
+        <label for="iesbas">
+          <input type="checkbox" name="esbas" id="iesbas" checked /> Basquete
+        </label>
+        <br />
+        <label for="iesfut">
+          <input type="checkbox" name="esfut" id="iesfut" checked /> Futebol
+        </label>
+        <br />
+        <label for="iesvolei">
+          <input type="checkbox" name="esvolei" id="iesvolei" /> Vôlei
+        </label>
+        <br />
+        <label for="iesnata">
+          <input type="checkbox" name="esnata" id="iesnata" /> Natação
+        </label>
+        <br />
+        <label for="iesout">
+          <input type="checkbox" name="esout" id="iesout" /> Outros
+        </label>
+        <br />
+      </fieldset>
+
+      <!-- Botões de envio e reset do formulário -->
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+    <!-- Fim do formulário -->
+  </body>
+</html>
