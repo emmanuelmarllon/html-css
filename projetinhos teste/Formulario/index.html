@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <title>Criar Conta</title>
+  </head>
+  <body>
+    <main id="form_container">
+      <div id="form_header">
+        <h1 id="form_title">Criar Conta</h1>
+        <button style="margin-left: auto" class="btn-default">
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </button>
+      </div>
+      <form action="" id="form">
+        <div id="input_container">
+          <div class="input-box">
+            <label for="first-name" class="form-label"> Primeiro nome: </label>
+            <div class="input-field">
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                class="form-control"
+                placeholder="Insira aqui seu primeiro nome"
+                required
+              />
+              <i class="fa-regular fa-user"></i>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="last-name" class="form-label"> Último nome: </label>
+            <div class="input-field">
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                class="form-control"
+                placeholder="Insira aqui seu último nome"
+                required
+              />
+              <i class="fa-regular fa-user"></i>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="birthday" class="form-label">Nacimento</label>
+            <div class="input-field">
+              <input
+                type="date"
+                id="birthday"
+                name="birthday"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="email" class="form-label">E-mail</label>
+            <div class="input-field">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="exemplo@gmail.com"
+                required
+              />
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="password" class="form-label">Senha</label>
+            <div class="input-field">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                placeholder="*********"
+                required
+              />
+              <i class="fa-regular fa-eye-slash password-icon"></i>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="confirm_password" class="form-label"
+              >Confirmar Senha</label
+            >
+            <div class="input-field">
+              <input
+                type="confirm_password"
+                id="confirm_password"
+                name="password"
+                class="form-control"
+                placeholder="*********"
+                required
+                minlength="8"
+              />
+              <i class="fa-regular fa-eye-slash password-icon"></i>
+            </div>
+          </div>
+          <div>
+            <div class="radio-container">
+              <label class="form-label"> Género </label>
+              <div id="gender_input">
+                <div class="radio-box">
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    class="form-control"
+                    value="female"
+                  />
+                  <label for="female" class="form-label"> Feminino </label>
+                </div>
+                <div class="radio-box">
+                  <input
+                    type="radio"
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    class="form-control"
+                    value="male"
+                  />
+                  <label for="male" class="form-label"> Masculino </label>
+                </div>
+                <div class="radio-box">
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="other"
+                    class="form-control"
+                    value="other"
+                    value="other"
+                  />
+                  <label for="other" class="form-label"> Outros </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn-default">
+          <i class="fa-solid fa-check"></i>
+          criar conta
+        </button>
+      </form>
+    </main>
+    <script src="src/javascripts/script.js"></script>
+  </body>
+</html>
