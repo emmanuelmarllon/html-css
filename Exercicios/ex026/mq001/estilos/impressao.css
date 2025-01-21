@@ -16,5 +16,10 @@ menu {
   display: none;
 }
 article::after {
-  content: "Este artigo foi imprimido em: " attr(data-date);
+  content: "Este artigo foi imprimido em:Emmanuelmarllon.github.io";
+}
+article {
+  width: 100%;
+  display: block;
+  margin: auto;
 }
