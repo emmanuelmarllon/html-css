@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Media query</title>
-    <link rel="stylesheet" href="estilos/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/media-query.css" />
   </head>
-  <body>
+  <body onresize="mudouTamanho()">
     <header>
       <h1>Meu Site</h1>
-      <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu<span >
+      <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()"
+        >menu</i
+      >
       <menu id="itens">
         <ul>
           <li><a href="#">Opção 1</a></li>
@@ -29,11 +32,10 @@
         <h2>Testando media queries</h2>
         <p></p>
         <p>
-          As media queries são uma funcionalidade poderosa <br> do CSS que permitem a
-          criação de layouts responsivos.<br />
-          Com elas, é possível aplicar estilos diferentes dependendo <br> do tamanho
-          da tela do dispositivo, orientação, resolução e outras
-          características.<br />
+          As media queries são uma funcionalidade poderosa do CSS que permitem a
+          criação de layouts responsivos. Com elas, é possível aplicar estilos
+          diferentes dependendo do tamanho da tela do dispositivo, orientação,
+          resolução e outras características.<br />
           Isso garante que o conteúdo do site seja exibido de forma adequada em
           diversos dispositivos, como smartphones, tablets e desktops.
         </p>
@@ -66,14 +68,20 @@
       </article>
     </main>
     <script>
-        function clickMenu () {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-            
+      function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = "block";
+        } else {
+          itens.style.display = "none";
         }
+      }
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
     </script>
   </body>
 </html>
